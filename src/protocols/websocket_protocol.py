@@ -41,7 +41,7 @@ class WebsocketProtocol(Protocol):
             # 建立WebSocket连接
             self.websocket = await websockets.connect(
                 self.WEBSOCKET_URL, 
-                extra_headers=headers
+                additional_headers=headers
             )
 
             # 启动消息处理循环
